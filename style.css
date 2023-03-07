@@ -119,6 +119,37 @@ nav {
 /* -------------features----------------- */
 .container {
     padding: 50px 12%;
+    font-size: 22px;
+}
+
+.evenSection {
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    /* padding: 50px 0; */
+    /* flex-wrap: wrap; */
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.tv-screen {
+    flex-basis: 50%;
+    /* margin-bottom: 20px; */
+}
+
+.tv-screen img {
+    display: block;
+    max-width: 90%;
+    margin: auto;
+}
+
+.text-col > h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 

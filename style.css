@@ -158,7 +158,7 @@ nav {
 
 /* -------------  Frequently Asked Questions ----------------- */
 .faq {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 10px 12%;
     text-align: center;
     font-size: 18px;
@@ -170,3 +170,70 @@ nav {
 }
 
 
+.accordion {
+    /* border: 1px solid red; */
+    margin: 60px auto;
+    max-width: 750px;
+}
+
+.accordion> li {
+    /* border: 1px solid blue; */
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion> li > label {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type='radio']{
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+
+.faq small {
+    font-size: 13px;
+}
